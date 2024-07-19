@@ -1,0 +1,91 @@
+{
+    "Mics": {
+        "blockScale": 1.5,
+        "pinTop": 2,
+        "paddleScale": 1.8,
+        "ballScale": 1.5,
+        "cellWidth": 13
+    },
+    "Map": [
+        [
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "blue"
+        ],
+        [
+            "red",
+            "red",
+            "red",
+            "red",
+            "red",
+            "red",
+            "red",
+            "red",
+            "red",
+            "red"
+        ],
+        [
+            "green",
+            "green",
+            "green",
+            "green",
+            "green",
+            "green",
+            "green",
+            "green",
+            "green",
+            "green"
+        ],
+        [
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow",
+            "yellow"
+        ],
+        [
+            "gray",
+            "gray",
+            "gray",
+            "gray",
+            "gray",
+            "gray",
+            "gray",
+            "gray",
+            "gray",
+            "gray"
+        ],
+        [
+            "purple",
+            "purple",
+            "purple",
+            "purple",
+            "purple",
+            "purple",
+            "purple",
+            "purple",
+            "purple",
+            "purple"
+        ]
+    ],
+    "WeightBlock": {
+        "yellow": 1,
+        "green": 1,
+        "blue": 1,
+        "red": 1,
+        "purple": 1,
+        "gray": 1
+    }
+}

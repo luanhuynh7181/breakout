@@ -1,0 +1,10 @@
+{
+  "name": "breakout",
+  "uuid": "a3be5f3f-c3a5-42e8-a5d3-01eeb29665b5",
+  "creator": {
+    "version": "3.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
