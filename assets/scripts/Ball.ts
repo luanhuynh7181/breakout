@@ -195,7 +195,7 @@ export class Ball extends Component {
             return 2;
         }
 
-        let idTracking = [node.idTracking.split("_")];
+        let idTracking = node.idTracking.split("_");
         let rowBlock = parseInt(idTracking[0]);
         let colBlock = parseInt(idTracking[1]);
         // bottom left rect
