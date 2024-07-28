@@ -1,8 +1,8 @@
 import { SpriteAtlas } from "cc";
 
-export default class DataStorage {
-    
-    private static instance: DataStorage;
+class _DataStorage {
+
+    private static instance: _DataStorage;
     private mapId: number = 0;
     private mapData = {};
     private prefab = {};
@@ -10,39 +10,39 @@ export default class DataStorage {
     private constructor() {
     }
 
-    public static getInstance(): DataStorage {
-        if (!DataStorage.instance) {
-            DataStorage.instance = new DataStorage();
+    public static getInstance(): _DataStorage {
+        if (!_DataStorage.instance) {
+            _DataStorage.instance = new _DataStorage();
         }
-        return DataStorage.instance;
+        return _DataStorage.instance;
     }
 
     public addDataStorage(id: number, data: any) {
         this.mapData[id] = data;
     }
 
-    public getCurrentMap(): JSON {
+    public get CurrentMap(): JSON {
         return this.mapData[this.mapId];
     }
 
     public getBallScale(): number {
-        return this.getCurrentMap()["Mics"]["ballScale"];
+        return this.CurrentMap["Mics"]["ballScale"];
     }
 
     public getPaddleScale(): number {
-        return this.getCurrentMap()["Mics"]["paddleScale"];
+        return this.CurrentMap["Mics"]["paddleScale"];
     }
 
     public getMapData(): string[][] {
-        return this.getCurrentMap()["Map"];
+        return this.CurrentMap["Map"];
     }
 
     public getCellWidth(): number {
-        return this.getCurrentMap()["Mics"]["cellWidth"];
+        return this.CurrentMap["Mics"]["cellWidth"];
     }
 
     public getPinTop(): number {
-        return this.getCurrentMap()["Mics"]["pinTop"];
+        return this.CurrentMap["Mics"]["pinTop"];
     }
 
     public setSpriteAtlas(spriteAtlas: SpriteAtlas) {
@@ -54,7 +54,7 @@ export default class DataStorage {
     }
 
     public getWeightBlocks() {
-        return this.getCurrentMap()["WeightBlock"];
+        return this.CurrentMap["WeightBlock"];
     }
 
     public isWin(): boolean {
@@ -66,3 +66,5 @@ export default class DataStorage {
     }
 
 }
+const DataStorage = _DataStorage.getInstance();
+export default DataStorage;

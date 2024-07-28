@@ -23,7 +23,7 @@ export class SceneLoading extends Component {
                 return;
             }
             const data = jsonAsset.json;
-            DataStorage.getInstance().addDataStorage(id, data);
+            DataStorage.addDataStorage(id, data);
             this.loadConfigMap(id + 1);
         });
     }
@@ -63,7 +63,7 @@ export class SceneLoading extends Component {
                 console.error('Failed to load sprite atlas:', err);
                 return;
             }
-            DataStorage.getInstance().setSpriteAtlas(atlas);
+            DataStorage.setSpriteAtlas(atlas);
         });
     }
 

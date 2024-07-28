@@ -30,7 +30,7 @@ export class Ball extends Component {
     }
 
     updateSizeBall() {
-        let ballScale = DataStorage.getInstance().getBallScale();
+        let ballScale = DataStorage.getBallScale();
         let node = this.node;
         node.getComponent(UITransform).width *= ballScale;
         node.getComponent(UITransform).height *= ballScale;
@@ -299,7 +299,4 @@ export class Ball extends Component {
 
     onDestroy() {
     }
-
 }
-
-

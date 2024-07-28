@@ -18,7 +18,7 @@ export class Paddle extends Component {
     }
 
     updateSizePaddle() {
-        let paddleScale = DataStorage.getInstance().getPaddleScale();
+        let paddleScale = DataStorage.getPaddleScale();
         let node = this.node;
         node.getComponent(UITransform).width *= paddleScale;
         node.getComponent(UITransform).height *= paddleScale;
